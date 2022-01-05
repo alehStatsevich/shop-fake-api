@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/shop-fake-api/static/css/main.b5d43e83.css",
-    "main.js": "/shop-fake-api/static/js/main.43fc69a8.js",
+    "main.css": "/shop-fake-api/static/css/main.22a2c52f.css",
+    "main.js": "/shop-fake-api/static/js/main.048cbd3c.js",
     "static/js/787.a4ccde6d.chunk.js": "/shop-fake-api/static/js/787.a4ccde6d.chunk.js",
     "static/media/Group 14.svg": "/shop-fake-api/static/media/Group 14.471a514f61800c5c169a69a27ce7a3b2.svg",
     "index.html": "/shop-fake-api/index.html",
     "static/media/Symbol 148 – 1.svg": "/shop-fake-api/static/media/Symbol 148 – 1.034cd5084d5994636d10fadae3f9f9bd.svg",
     "static/media/Union 3.svg": "/shop-fake-api/static/media/Union 3.6428a80741130b2a83e7dfeb7bf8aed1.svg",
-    "main.b5d43e83.css.map": "/shop-fake-api/static/css/main.b5d43e83.css.map",
-    "main.43fc69a8.js.map": "/shop-fake-api/static/js/main.43fc69a8.js.map",
+    "main.22a2c52f.css.map": "/shop-fake-api/static/css/main.22a2c52f.css.map",
+    "main.048cbd3c.js.map": "/shop-fake-api/static/js/main.048cbd3c.js.map",
     "787.a4ccde6d.chunk.js.map": "/shop-fake-api/static/js/787.a4ccde6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5d43e83.css",
-    "static/js/main.43fc69a8.js"
+    "static/css/main.22a2c52f.css",
+    "static/js/main.048cbd3c.js"
   ]
 }
