@@ -1,0 +1,144 @@
+.authBlock {
+    max-width: 1366px;
+    height: 768px;
+    background: #F1F9FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: auto;
+
+}
+
+.authForm {
+    top: 24px;
+    left: 181px;
+    max-width: 1004px;
+    height: 721px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    position: relative;
+
+}
+
+.loginFonds {
+    font-family: 'Arial Bold';
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h3{
+    margin: 121px auto 51px;
+    width: 134px;
+    height: 22px;
+    text-align: center;
+    font: normal normal bold 20px/23px Arial;
+    letter-spacing: 0px;
+    color: #2699FB;
+    opacity: 1;
+}
+.h6{
+    width: 43px;
+    height: 16px;
+    text-align: left;
+    font: normal normal bold 14px/16px Arial;
+    letter-spacing: 0px;
+    color: #2699FB;
+    opacity: 1;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+.inputs{
+    width: 360px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #BCE0FD;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 14px/16px Arial;
+    letter-spacing: 0px;
+    color: #2699FB;
+    padding-left: 20px;
+    position: relative;
+}
+.password{
+    margin-top: 10px;
+}
+.btn{
+    width: 360px;
+    height: 50px;
+    background: #0075D8 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.btn:hover {
+    text-transform: none;
+    background-color: #2196f3;
+    color: #ffffff;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.1s;
+}
+span{
+    width: 94px;
+    height: 16px;
+    text-align: center;
+    font: normal normal bold 14px/12px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.registration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 21px;
+}
+.p{
+    width: 108px;
+    height: 16px;
+    text-align: left;
+    font: normal normal normal 14px/16px Arial;
+    letter-spacing: 0px;
+    color: #2699FB;
+}
+.link{
+    width: 95px;
+    height: 16px;
+    text-align: left;
+    font: normal normal bold 14px/16px Arial;
+    letter-spacing: 0px;
+    color: #2699FB;
+    text-decoration: none;
+}
+.photo{
+    width: 63px;
+    height: 50px;
+    opacity: 1;
+    margin-top: 60px;
+}
+.error{
+    color: red;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.errorLogin{
+    position: absolute;
+    right: 340px;
+    top: 228px;
+}
+.errorEmail{
+    position: absolute;
+    right: 340px;
+    top: 300px;
+}
+.errorPassword{
+    position: absolute;
+    right: 340px;
+    top: 378px;
+}

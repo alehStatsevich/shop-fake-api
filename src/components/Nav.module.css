@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.link {
+    height: 54px;
+    width: 136px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #2699FB;
+}
