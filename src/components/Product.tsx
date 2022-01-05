@@ -1,20 +1,29 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {fetchBeersThunk, ProductsType} from "../bll/punkReduser";
 import {AppStoreType} from "../bll/store";
 import style from "./Product.module.css"
 import {Paginator} from "../common/paginator/Paginator";
 import s from './Login.module.css'
+import {Preloader} from "../common/Preloader/Preloader";
 
 const Product = () => {
     const dispatch = useDispatch();
+    const [isFetching,setIsFetching]=useState(true)
     const beers = useSelector<AppStoreType, Array<ProductsType>>((state) => state.beers.items)
     const page = useSelector<AppStoreType, number>((state) => state.beers.page)
     const per_page = useSelector<AppStoreType, number>((state) => state.beers.per_page)
     useEffect(() => {
         dispatch(fetchBeersThunk())
+        setTimeout( () => {
+            setIsFetching(false)
+        }, 2000 )
     }, [])
     console.log(beers, "beers")
+
+    if (isFetching) {
+        return <div><Preloader/></div>
+    }
 
     return (
         <div className={style.p}>
