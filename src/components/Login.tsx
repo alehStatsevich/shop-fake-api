@@ -41,6 +41,7 @@ const Login = () => {
 
     return (
         <div className={style.authBlock}>
+            <h6 className={style.error}>in process przykręcić inne API</h6>
             <div className={style.authForm}>
                 <div className={style.loginFonds}>
                     <h3 className={style.h3}>
@@ -80,7 +81,6 @@ const Login = () => {
                     <img className={style.photo} src={photo} alt="photo"/>
                 </div>
             </div>
-
         </div>
     );
 };

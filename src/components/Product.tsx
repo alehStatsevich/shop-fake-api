@@ -4,7 +4,7 @@ import {fetchBeersThunk, ProductsType} from "../bll/punkReduser";
 import {AppStoreType} from "../bll/store";
 import style from "./Product.module.css"
 import {Paginator} from "../common/paginator/Paginator";
-
+import s from './Login.module.css'
 
 const Product = () => {
     const dispatch = useDispatch();
@@ -18,6 +18,7 @@ const Product = () => {
 
     return (
         <div className={style.p}>
+            <h6 className={s.error}>pokazać loading,dorobić style paginator </h6>
             <h3 className={style.h3}>Nagłówek duży</h3>
             <div className={style.productBlock}>
                 {beers.map((b) => {
