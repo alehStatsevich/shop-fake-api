@@ -1,28 +1,28 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import style from "./Nav.module.css"
 
 const Nav = () => {
     return (
         <div className={style.nav}>
-            <Link to="/login" className={style.link}>
+            <NavLink to="/login" className={({ isActive }) =>  isActive ? style.act  :  style.link}>
                 login
-            </Link>
-            <Link to="/registration" className={style.link}>
+            </NavLink>
+            <NavLink to="/registration" className={({ isActive }) =>  isActive ? style.act  :  style.link}>
                 registration
-            </Link>
-            <Link to="/forgot" className={style.link}>
+            </NavLink>
+            <NavLink to="/forgot" className={({ isActive }) =>  isActive ? style.act  :  style.link}>
                 forgot
-            </Link>
-            <Link to="/" className={style.link}>
+            </NavLink>
+            <NavLink to="/" className={({ isActive }) =>  isActive ? style.act  :  style.link}>
                 home
-            </Link>
-            <Link to="/product" className={style.link}>
+            </NavLink>
+            <NavLink to="/product" className={({ isActive }) =>  isActive ? style.act  :  style.link}>
                 products
-            </Link>
-            <Link to="/contact" className={style.link}>
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) =>  isActive ? style.act  :  style.link}>
                 contact
-            </Link>
+            </NavLink>
         </div>
     );
 };

@@ -1,8 +1,9 @@
-.nav{
+.nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .link {
     height: 54px;
     width: 136px;
@@ -11,4 +12,19 @@
     align-items: center;
     justify-content: center;
     color: #2699FB;
+}
+
+.act {
+    height: 54px;
+    width: 136px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-transform: none;
+    background-color: #2196f3;
+    color: #ffffff;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.1s;
 }

@@ -23,7 +23,7 @@ console.log(cardPackTotalCount,'cardPackTotalCount')
     pages.push(i);
   }
 
-  const portionSize = 5;
+  const portionSize = 3;
 
   const portionCount = Math.ceil(packPagesCount / portionSize);
   const [portionNumber, setPortionNumber] = useState<number>(1);

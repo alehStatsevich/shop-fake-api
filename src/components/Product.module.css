@@ -67,3 +67,19 @@
     opacity: 1;
     margin: 20px auto;
 }
+.star {
+    width: 19px;
+    height: 18px;
+    background-image: url('../common/img/star.svg');
+    border: none;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+.images {
+    width: 19px;
+    height: 18px;
+    background-color: #FFFFFF;
+}
