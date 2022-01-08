@@ -60,7 +60,13 @@ export const beerReducer = (state = initialState, action: ActionsType): initialS
             })
             item && copyState.element.push({product: item, count: 1})
             copyState.element = [...copyState.element]
-console.log(copyState.element)
+            console.log(copyState.element)
+            return copyState
+        }
+        case "DELETE_PRODUCT": {
+            const copyState = {...state}
+            copyState.element = copyState.element.filter(el => el.product.id !== action.id)
+            console.log(copyState.element)
             return copyState
         }
         default:
@@ -69,6 +75,7 @@ console.log(copyState.element)
 }
 const setBeersAC = (beers: Array<ProductsType>) => ({type: "SET-BEERS", beers} as const);
 export const addProductAC = (id: number) => ({type: "ADD_PRODUCT", id} as const);
+export const deleteProductAC = (id: number) => ({type: 'DELETE_PRODUCT', id} as const)
 
 export const fetchBeersThunk = (page?: number, per_page?: number) => (dispatch: Dispatch) => {
     punkAPI
@@ -83,4 +90,5 @@ export const fetchBeersThunk = (page?: number, per_page?: number) => (dispatch: 
 type ActionsType =
     | ReturnType<typeof setBeersAC>
     | ReturnType<typeof addProductAC>
+    | ReturnType<typeof deleteProductAC>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import Footer from "../components/Footer";
 import Home from "../components/Home";
 import Login from "../components/Login";
@@ -18,14 +18,14 @@ const Router = () => {
         <div>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                {/*<Route path="/" element={ <Navigate to="login" />} />*/}
+                <Route path="/" element={ <Navigate to="login" />} />
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/registration" element={<Registration/>}/>
                 <Route path="/forgot" element={ <Forgot/>}/>
                 <Route path="/product" element={ <Product/>}/>
                 <Route path= "/contact" element={ <Contact/>}/>
 
-                <Route element={<Error404/>}/>
+                {/*<Route element={<Error404/>}/>*/}
             </Routes>
             <Footer/>
         </div>
